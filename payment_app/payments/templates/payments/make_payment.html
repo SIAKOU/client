@@ -1,0 +1,17 @@
+<!-- payments/templates/payments/make_payment.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Faire un Paiement</title>
+</head>
+<body>
+    <h1>Faire un Paiement</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Payer</button>
+    </form>
+</body>
+</html>

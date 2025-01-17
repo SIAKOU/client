@@ -1,0 +1,17 @@
+<!-- payments/templates/payments/register_user.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Enregistrement Utilisateur</title>
+</head>
+<body>
+    <h1>Enregistrement Utilisateur</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">S'inscrire</button>
+    </form>
+</body>
+</html>
